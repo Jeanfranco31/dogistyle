@@ -55,7 +55,6 @@ header nav a:hover{
     transition: all 400ms ease;
 }
 header nav span{
-    margin: 0 3px 0 3px;
     font-size: 30px;/**/
     font-weight: 900;/**/
     color: #ffffff;
