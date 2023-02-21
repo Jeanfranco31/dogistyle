@@ -144,11 +144,12 @@ header .container{
 /*fin animacion*/
 #about_me .container{
     text-align: center;
-    padding: 200px 12px;
+    padding: 150px 12px;
     background-color: #fff;
     color: black;
     font-size: 25px;
     font-weight: 400;
+    width:90%;
 }
 #about_me .texto{
     font-weight: bolder;
