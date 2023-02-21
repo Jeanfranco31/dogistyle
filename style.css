@@ -124,7 +124,24 @@ header .container{
 @keyframes blink {
     50% { border-color:transparent ;}
 }
-
+/*ANIMACION SOBRE MI*/
+.texto p{
+    animation-name: texto-info;
+    animation-duration: 1.5s;
+}
+@keyframes texto-info {
+    from{
+        margin-left: 100%;
+        width: 100%;
+        opacity: 0;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+        opacity: 1;
+    }
+}
+/*fin animacion*/
 #about_me .container{
     text-align: center;
     padding: 200px 12px;
