@@ -1,4 +1,4 @@
-*, body{
+*{
     box-sizing: border-box;
 }
 html{
@@ -21,7 +21,7 @@ header{
 }
 header .logo{
     margin: 0 0 5px 0;
-    padding: 15px 30px;
+    padding: 15px 15px;
     font-weight: 700;
     font-size: 2.5em;
     border-bottom: 1px solid white;
@@ -42,7 +42,6 @@ header .container{
 }
 #opciones li{
     text-decoration: none;
-    margin-right: 15px;
     margin-right: 15px;
     padding: 5px;
 }
