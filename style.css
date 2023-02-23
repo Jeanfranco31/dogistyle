@@ -1,96 +1,84 @@
 *{
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
 }
+
 html{
     scroll-behavior: smooth;
 }
-ul{list-style: none;}
-
-body{
-    margin: 0;
-    font-family: 'Raleway', sans-serif;
-    background-color:black;
+.logo{
+  width:100%;
+  background-color: #e91360;
+  text-align: center;
+}
+.logo h1{
+  font-size: 130px;
+  padding: 5px 0;
 }
 
-.container{
-    max-width: 1400px;
-    margin: auto;
+nav{/**/
+  background-color: #e91363;
+}
+.options{/**/
+  width:100%;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #fff;
+  border-radius: 20px;
 }
 
-header{
-    background-color: #e91363;
+.options li{/**/
+  list-style: none; 
+  padding: 5px 5px;
+  margin: 3px 0 3px 0;
 }
-header .logo{
-    margin: 0 0 5px 0;
-    padding: 15px 15px;
-    font-weight: 700;
-    font-size: 2.5em;
-    border-bottom: 1px solid white;
+.options li a{
+  text-decoration: none;
+  font-weight: 400;
+  color:#000;
+  padding: 5px 5px;
+  font-size: 40px;
 }
-
-header .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#opciones{
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    list-style: none;
-    margin-bottom: 5px;
-}
-#opciones li{
-    text-decoration: none;
-    margin-right: 15px;
-    padding: 5px;
-}
-#opciones li a{
-    text-decoration: none;
-    color: #fff;
-    padding: 5px;
-    font-weight: 600;
-}
-#opciones li a:hover{
-    color: #24262b;
-    transition: all 400ms ease;
-    border-radius: 20px;
-    background-color: #fff;
-}
-#redes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    list-style: none;
-
-}
-#redes li{
-    text-decoration: none;
-    margin-right: 15px;
-    padding: 5px 5px;
-}
-#redes li a{
-    text-decoration: none;
-    color: #fff;
-    padding: 5px 5px;
-}
-#redes li a:hover{
-    font-weight: 700;
-    color: #24262b;
-    transition: all 400ms ease;
-    border-radius: 20px;
+.options li a:hover{/**/
+  color:#fff;
+  background: #24262b;
+  border-radius: 20px;
+  transition: all 400ms ease;
 }
 
+.socialMedia{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  background-color: #e91363;
+}
+
+.socialMedia li{
+  list-style: none; 
+  padding: 5px 5px;
+  margin: 10px 20px 10px 0;
+}
+.socialMedia li a{
+  text-decoration: none; 
+  color:#ffffff;
+}
+.socialMedia li a:hover{
+  color:#000;
+  border-radius: 20px;
+  transition: all 400ms ease;
+}
+i{
+  font-size: 50px;
+}
 #hero{
-    position:relative;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 90vh;
+    height: 85vh;
     background-image: 
     linear-gradient(0deg,
     rgba(0,0,0,0.2),
@@ -105,8 +93,7 @@ header .container{
     background-size: cover;
 }
 #hero h1{
-    position:absolute;
-    z-index: 2;
+    z-index: 1;
     font-weight: bold;
     font-size: 9vw;
     bottom: 50px;
@@ -118,41 +105,43 @@ header .container{
     blink .5s infinite step-end alternate;
     overflow:hidden;
 }
+
+
 @keyframes typing {
-    from{ width: 0; }    
+  from{ width: 0; }    
 }
 @keyframes blink {
-    50% { border-color:transparent ;}
-}
-/*ANIMACION SOBRE MI*/
-.texto p{
-    animation-name: texto-info;
-    animation-duration: 1.5s;
+  50% { border-color:transparent ;}
 }
 @keyframes texto-info {
-    from{
-        margin-left: 100%;
-        width: 100%;
-        opacity: 0;
-    }
-    to{
-        margin-left: 0%;
-        width: 100%;
-        opacity: 1;
-    }
+  from{
+      margin-left: 100%;
+      width: 100%;
+      opacity: 0;
+  }
+  to{
+      margin-left: 0%;
+      width: 100%;
+      opacity: 1;
+  }
 }
 /*fin animacion*/
 #about_me .container{
-    text-align: center;
-    padding: 150px 12px;
-    background-color: #fff;
-    color: black;
-    font-size: 25px;
-    font-weight: 400;
-    width:90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 200px 12px;
+  margin: 0 auto;
+  color: black;
+  font-size: 25px;
+  font-weight: 400;
+  width:90%;
+  height: 100vh;
 }
 #about_me .texto{
-    font-weight: bolder;
+  font-weight: bolder;
+  font-size: 80px;
 }
 
 /*-----------CONTENEDOR DE TARJETAS-----------------*/
@@ -160,122 +149,122 @@ header .container{
 
 
 #tit-ser{
-    display:block;
-    margin: 20px auto;
-    text-align: center;
+  display:block;
+  margin: 20px auto;
+  text-align: center;
 }
 .container-cards{
-    width: 70%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns:1fr;
-    grid-template-rows: auto;
-    gap: 20px;
-    
+  width: 60%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns:1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  
 }
 
 .container-cards .card{
-    border: 1px solid rgb(26, 25, 25);
-    background: #fff;
+  border: 1px solid rgb(26, 25, 25);
+  background: #fff;
 }
 .card img{
-    width: 100%;
-    height: 250px;
+  width: 100%;
+  height: 250px;
 }
 .card h2{
-    text-align: center;
-    line-height: 50px;
+  text-align: center;
+  line-height: 50px;
 }
 .card{
-    transition: all 400ms ease;
-   
+  transition: all 400ms ease;
+ 
 }
 .card:hover{
-    transform: translateY(-3%);
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+  transform: translateY(-3%);
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
 }
 /*FIN TARJETAS*/
 
 /*INICIO FOOTER*/
 .container_footer{
-    max-width: 100%;
+  max-width: 100%;
 }
 .footer{
-    background-color: rgba(0, 5, 8, 0.918);
-    padding: 70px 0;
-    margin-top: 40px;
+  background-color: rgba(0, 5, 8, 0.918);
+  padding: 70px 0;
+  margin-top: 40px;
 }
 .row{
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 .container_footer ul{
-    list-style: none;
+  list-style: none;
 
 }
 .footer-col{
-    width: 50%;
-    padding: 0 15px;
+  width: 50%;
+  padding: 0 15px;
 }
 .footer-col h4{
-    font-size: 1.5em;
-    color: #fff;
-    text-transform: capitalize;
-    margin-bottom: 30px;
-    font-weight: 500;
-    position: relative;
+  font-size: 1.5em;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
 }
 .footer-col h4::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    background-color: #e91363;
-    height: 2px;
-    box-sizing: border-box;
-    width: 50px;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91363;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
 }
 .footer-col ul li:not(:last-child){
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .footer-col ul li a{
-    font-size: 16px;
-    text-transform: capitalize;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 300;
-    color: #bbbbbb;
-    display: block;
-    transition: all 0.3s ease;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
 }
 .footer-col ul li a:hover{
-    color: #fff;  
-    padding-left:10px;
+  color: #fff;  
+  padding-left:10px;
 }
 .footer-col .social-links a{
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    background-color: rgba(255, 255, 255, 0.2);
-    margin: 0 10px 10px 0;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    color: #fff;
-    transition: all 0.5s ease;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  transition: all 0.5s ease;
 }
 
 .footer-col .social-links a:hover{
-    color: #24262b;
-    background: #ffffff;
+  color: #24262b;
+  background: #ffffff;
 }
 /*FIN FOOTER*/
-
+/*
 @media (min-width:520px){
     .container-cards{
         grid-template-columns:1fr 1fr;
     }
-}
+}*/
 @media (min-width:720px){
 
     header{
