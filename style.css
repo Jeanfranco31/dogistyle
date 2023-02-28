@@ -13,12 +13,11 @@
   text-align: center;
 }
 .logo h1{
-  font-size: 150px;
-  padding: 15px 0;
+  font-size: 130px;
+  padding: 5px 0;
 }
 
 nav{/**/
-  width: 100%;
   background-color: #e91363;
 }
 .options{/**/
@@ -26,25 +25,25 @@ nav{/**/
   display: flex;
   justify-content: space-evenly;
   background-color: #fff;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 
 .options li{/**/
   list-style: none; 
   padding: 5px 5px;
-  margin: 10px 0 3px 0;
+  margin: 3px 0 3px 0;
 }
 .options li a{
   text-decoration: none;
   font-weight: 400;
   color:#000;
   padding: 5px 5px;
-  font-size: 50px;
+  font-size: 40px;
 }
 .options li a:hover{/**/
   color:#fff;
   background: #24262b;
-  border-radius: 30px;
+  border-radius: 20px;
   transition: all 400ms ease;
 }
 
@@ -58,7 +57,7 @@ nav{/**/
 .socialMedia li{
   list-style: none; 
   padding: 5px 5px;
-  margin: 10px 20px 10px 0;
+  margin: 10px 0 10px 0;
 }
 .socialMedia li a{
   text-decoration: none; 
@@ -70,8 +69,10 @@ nav{/**/
   transition: all 400ms ease;
 }
 i{
-  font-size: 60px;
+  font-size: 50px;
 }
+
+
 #hero{
     display: flex;
     align-items: center;
